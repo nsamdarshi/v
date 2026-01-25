@@ -42,7 +42,7 @@ You can edit the configuration directly on GitHub without downloading anything!
 3. Under **Build and deployment** > **Source**, select `Deploy from a branch`.
 4. Select `main` branch and `/ (root)` folder.
 5. Click **Save**.
-6. Wait a minute, then refresh. You will see your live URL (e.g., `https://your-username.github.io/ValentineWeek`).
+6. Wait a minute, then refresh. You will see your live URL (e.g., `https://Deon-07.github.io/ValentineWeek`).
 7. Send this Link to your Valentine! 💌
 
 ---
@@ -84,6 +84,6 @@ If you want to edit on your computer:
 ## ❤️ Credits
 
 - Animations & Original Concept: **Deon_07**
-- Customization & Enhancements: [Your Name]
+- Customization & Enhancements: Dip Kumar Ghosh
 
 Stay happy and spread love! :)

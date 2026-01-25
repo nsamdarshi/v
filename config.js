@@ -7,9 +7,6 @@ const config = {
     // Your Name / Recipient Name
     recipientName: "Anu🌸",
 
-    // Year Adjustment
-    year: 2026,
-
     // Background Icons (Floating)
     floatingIcons: [
         'assets/heart.svg',
@@ -167,8 +164,6 @@ const config = {
                 "There is magic in a hug.",
                 "It heals everything.",
                 "Remember how <strong>safe</strong> I felt?",
-                "Remember those <strong>side hugs</strong>?",
-                "Those small, quick ones...",
                 "I miss the feeling of your arms.",
                 "The safety I feel with you.",
                 "I crave that warmth again.",
