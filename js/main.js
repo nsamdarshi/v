@@ -4,7 +4,7 @@ let isPlaying = false;
 let petals = [];
 let isDateLocked = true; // Set to true for production (date-based), false for testing
 let debugDate = null; // For debugging: set to test specific dates like '2-7'
-let showDebugPanel = false; // Set to true to show the wrench icon, false to hide it
+let showDebugPanel = true; // Set to true to show the wrench icon, false to hide it
 
 // ============ DATE MAPPING ============
 const dateToDay = {
@@ -276,7 +276,7 @@ function init() {
 
     // Music setup is already called above, but we might need to update source if day changed
     setupMusicForDay();
-    tryAutoPlayMusic();
+    // tryAutoPlayMusic(); // playAudioSafe handles this now to avoid race conditions
     playTimeline();
 }
 
@@ -358,6 +358,7 @@ function playTimeline() {
     gsap.set('.idea', { opacity: 0, y: 20 });
     gsap.set('.typing-text span', { opacity: 0 });
     gsap.set('.typing-text', { y: 0, opacity: 1, scale: 1 });
+    gsap.set('.wa-input-text span', { opacity: 0 });
 
 
     // Reset send button and message bubble for replay
@@ -519,6 +520,20 @@ function showProposalStage() {
 
     // Yes button - celebrate!
     yesBtn.onclick = () => {
+        // Celebrate immediately!
+        createFireworks();
+        createHeartsRain();
+        createCelebration();
+
+        // Continuous confetti burst
+        for (let i = 0; i < 30; i++) {
+            setTimeout(() => {
+                const x = Math.random() * window.innerWidth;
+                const y = Math.random() * window.innerHeight;
+                createConfetti(x, y);
+            }, i * 100);
+        }
+
         gsap.to('#stageProposal', {
             opacity: 0, visibility: 'hidden', duration: 0.3, onComplete: () => {
                 gsap.to('#proposalResponse', { opacity: 1, visibility: 'visible', duration: 0.5 });

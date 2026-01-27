@@ -21,6 +21,8 @@ const config = {
         'assets/svgs/love-letter.svg',
         'assets/svgs/ring.svg',
         'assets/svgs/white-flower.svg',
+        'assets/svgs/chocolate.svg',
+        'assets/svgs/ring.svg',
         'assets/svgs/cherry-blossom.svg',
         'assets/svgs/sakura-petal.svg',
         'assets/svgs/sakura-branch.svg'
