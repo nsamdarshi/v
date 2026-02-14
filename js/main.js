@@ -2,7 +2,7 @@
 let currentDayIndex = 0;
 let isPlaying = false;
 let petals = [];
-let isDateLocked = true; // Set to true for production (date-based), false for testing
+let isDateLocked = false; // Set to true for production (date-based), false for testing
 let debugDate = null; // For debugging: set to test specific dates like '2-7'
 let showDebugPanel = false; // Set to true to show the wrench icon, false to hide it
 
